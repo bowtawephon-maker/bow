@@ -13,7 +13,7 @@
       AFRAME.registerComponent('soundhandler', {
         init: function () {
           var marker = this.el;
-          var audio = document.querySelector("#Audio1.mp3");
+          var audio = document.querySelector("#my-audio");
           
           marker.addEventListener('markerFound', function () {
             audio.play();
@@ -32,7 +32,7 @@
       
       <a-assets>
         <a-asset-item id="my-model" src="model1.glb"></a-asset-item>
-        <audio id="my-audio" src="sound.mp3" preload="auto"></audio>
+        <audio id="my-audio" src="Audio1.mp3" preload="auto"></audio>
       </a-assets>
 
       <a-marker 
